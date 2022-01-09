@@ -78,27 +78,26 @@ main {
   background-image: url(/images/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg);
   background-position: right;
   padding: 15rem 5rem 8rem 5rem;
-  display: grid;
-  grid-template-columns: 20rem 10rem 10rem 10rem 10rem 10rem;
-  grid-template-rows: 15rem 15rem 15rem 20rem;
-  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  /*   display: grid; */
+  /*   grid-template-columns: 20rem 10rem 10rem 10rem 10rem 10rem;
+  grid-template-rows: 15rem 15rem 15rem 20rem; */
+  gap: 25rem;
 }
 
 .top-box {
   border-radius: 3px;
-  padding: 0.5rem;
-  grid-area: 1/1/2/5;
+  width: 94rem;
+  /*   grid-area: 1/1/2/5; */
 }
 .top-box h2 {
+  white-space: nowrap;
   font-size: 2.8rem;
   font-weight: 400;
-}
-.top-box h2 span {
-  display: inline-block;
   overflow: hidden;
-  margin: 0 auto;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  border-right: 0.15em solid orange;
+  border-right: 0.15em solid #00E1A2;
 }
 .top-box p {
   padding-top: 0.5rem;
@@ -117,27 +116,23 @@ main {
     border-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-color: #00E1A2;
   }
 }
 .center-box {
   border-radius: 3px;
-  padding: 1rem;
-  grid-area: 2/1/2/3;
+  width: 30rem;
+  /*   grid-area: 2/1/2/3; */
 }
 .center-box h3 {
   font-size: 2rem;
   font-weight: 400;
   margin: 0.5rem;
 }
-.center-box p {
-  font-size: 1.7rem;
-}
 
 .bottom-box {
   border-radius: 5px;
-  padding: 1rem;
-  grid-area: 4/1/5/2;
+  /*   grid-area: 4/1/5/2; */
 }
 .bottom-box h3 {
   font-size: 1.7rem;
@@ -231,7 +226,6 @@ main {
   display: flex;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  border: green solid 2px;
 }
 
 .lines {
@@ -269,8 +263,7 @@ main {
 }
 
 .timeline-cards {
-  max-width: 80rem;
-  min-width: 60rem;
+  width: 80rem;
   margin-top: 6rem;
 }
 
@@ -332,7 +325,6 @@ main {
   background-color: #202020;
   width: 70rem;
   min-height: 15rem;
-  max-height: 32rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,14 +354,14 @@ footer span {
 }
 
 /* media query - mobile */
-@media (max-width: 480px) {
+@media (max-width: 740px) {
   header {
     position: fixed;
     top: 0;
     width: 100vw;
   }
   header nav {
-    display: none;
+    display: flex;
     justify-self: flex-end;
     margin-left: auto;
     align-items: center;
@@ -380,6 +372,138 @@ footer span {
   header nav li a {
     text-decoration: none;
     color: white;
+  }
+
+  main {
+    background-position-y: 250rem;
+    background-position-x: 0rem;
+    background-size: 3000px;
+    gap: 5rem;
+    padding: 10rem 0rem 2rem 3rem;
+    height: 100vh;
+    width: 100vw;
+    align-content: space-between;
+  }
+
+  .top-box {
+    width: 30rem;
+  }
+  .top-box h2 {
+    white-space: normal;
+    animation: none;
+    border-right: none;
+    font-size: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .subsection-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .projects-container div {
+    width: 15rem;
+    height: 25rem;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .bio-content-container {
+    flex-direction: column;
+  }
+  .bio-content-container section {
+    margin-top: 2rem;
+  }
+
+  .lines {
+    margin-left: 1.5rem;
+  }
+
+  .timeline-cards {
+    width: 270px;
+  }
+
+  .card h5 {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+  .card h6 {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-main h4 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-1,
+.card-2,
+.card-3,
+.card-4 {
+    margin-left: 1.5rem;
+  }
+
+  .line-1 {
+    height: 38.4rem;
+  }
+
+  .line-2 {
+    height: 28rem;
+  }
+
+  .line-3 {
+    height: 29.1rem;
+  }
+
+  .line-4 {
+    height: 26.4rem;
+  }
+
+  .line-5 {
+    height: 25rem;
+  }
+
+  .line-6 {
+    height: 11.3rem;
+  }
+
+  .line-7 {
+    height: 15.5rem;
+  }
+
+  .line-8 {
+    height: 15rem;
+  }
+
+  .interests-container {
+    width: 12rem;
+    height: 40rem;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .interests-container li i {
+    font-size: 2rem;
+  }
+  .interests-container li div {
+    font-size: 1.7rem;
+  }
+  .interests-container li .soc {
+    padding-left: 2rem;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+  footer span {
+    font-size: 12px;
   }
 }
 
