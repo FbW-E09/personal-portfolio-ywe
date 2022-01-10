@@ -6,7 +6,7 @@ $medium: 2rem;
 $small: 1.7rem;
 $background-main: rgb(163, 163, 163);
 /* dark-theme */
-$dark-background: url(images/background-image-repeat.jpg);
+$dark-background: url(/images/background-image-repeat.jpg);
 $dark-color: white;
 /* light-theme */
 $light-background: white;
@@ -106,7 +106,7 @@ header {
 
 /* main section */
 main {
-  background-image: url(images/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg);
+  background-image: url(/images/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg);
   background-position:right;
   padding: 15rem 5rem 8rem 5rem;
   display: flex;
