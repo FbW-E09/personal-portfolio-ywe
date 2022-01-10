@@ -22,7 +22,7 @@ html {
   font-size: 62.5%;
 }
 
-.dark-theme {
+body {
   font-family: "Roboto Mono", monospace;
   background-image: $dark-background;
   color: $dark-color;
@@ -30,26 +30,6 @@ html {
   font-size: 1.5rem;
 }
 
-/* .light-theme {
-  background: $light-background;
-  color: $light-color;
-  header {
-    background: $light-background;
-    border-bottom: black solid 1px;
-    .logo img {
-      filter: none;
-    }
-    nav {
-      li a {
-        color: black;
-      }
-    }
-  }
-  main {
-    background: $light-background;
-  }
-}
- */
 li {
   list-style: none;
 }
@@ -82,13 +62,13 @@ header {
 }
 
 .logo {
-  width: 8rem;
+  width: 80px;
   margin: 2rem 1rem 1rem 1rem;
   img {
     filter: invert(100%) sepia(10%) saturate(7477%) hue-rotate(192deg)
       brightness(116%) contrast(106%);
     object-fit: contain;
-    width: 50%;
+    width: 100%;
   }
 }
 

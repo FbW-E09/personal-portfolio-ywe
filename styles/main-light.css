@@ -13,7 +13,7 @@ html {
   font-size: 62.5%;
 }
 
-.dark-theme {
+body {
   font-family: "Roboto Mono", monospace;
   background-image: url(/images/background-image-repeat.jpg);
   color: white;
@@ -21,26 +21,6 @@ html {
   font-size: 1.5rem;
 }
 
-/* .light-theme {
-  background: $light-background;
-  color: $light-color;
-  header {
-    background: $light-background;
-    border-bottom: black solid 1px;
-    .logo img {
-      filter: none;
-    }
-    nav {
-      li a {
-        color: black;
-      }
-    }
-  }
-  main {
-    background: $light-background;
-  }
-}
- */
 li {
   list-style: none;
 }
