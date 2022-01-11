@@ -15,7 +15,7 @@ html {
 
 .dark-theme {
   font-family: "Roboto Mono", monospace;
-  background-image: url(/images/background-image-repeat.jpg);
+  background-image: url(background-image-repeat.jpg);
   color: white;
   text-transform: lowercase;
   font-size: 1.5rem;
@@ -49,7 +49,7 @@ li {
 header {
   position: fixed;
   top: 0;
-  background-image: url(/images/background-image-repeat.jpg);
+  background-image: url(background-image-repeat.jpg);
   height: 4rem;
   width: 100%;
   border-bottom: white solid 1px;
@@ -95,7 +95,7 @@ header nav li a {
 
 /* main section */
 main {
-  background-image: url(/images/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg);
+  background-image: url(pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg);
   background-position: right;
   padding: 15rem 5rem 8rem 5rem;
   display: flex;
